@@ -450,7 +450,7 @@
   <header class="hero">
     <div class="hero-text">
       <h1>Pipeline Head Loss Calculator</h1>
-      <p>Add each line in the route with its diameter, length, material and fittings — friction loss, minor loss and the grand total update live as you type.</p>
+      <p>Add each line in the route with its diameter, length, material and fittings- friction loss, minor loss and the grand total.</p>
     </div>
     <div class="hero-formula">
       <span class="lbl">Governing equation</span>
@@ -470,7 +470,7 @@
     <div class="field" id="flowField">
       <label>Flow Rate</label>
       <div class="input-row">
-        <input id="flowRate" type="number" value="115" step="any" min="0">
+        <input id="flowRate" type="number" value="0" step="any" min="0">
         <select id="flowUnit" style="max-width:100px;">
           <option value="m3h" selected>m&sup3;/h</option>
           <option value="ls">L/s</option>
@@ -493,7 +493,7 @@
         <input id="suctionStaticHead" type="number" value="0" step="any" min="0">
         <span class="unit-suffix">m</span>
       </div>
-      <div class="field-hint">0 if the source is flooded (above pump)</div>
+      <div class="field-hint">0 If the source is flooded (above pump)</div>
     </div>
     <div class="field">
       <label>Static Discharge Head</label>
@@ -1264,7 +1264,7 @@
           PALE='FFEAF3F3', WHITE='FFFFFFFF', INK='FF132A33', BORDER='FFDCE7E8';
 
     const wb = new ExcelJS.Workbook();
-    wb.creator = 'Pipeline Head Loss Calculator';
+    wb.creator = 'ENG. HESAHM MOHAMED';
     wb.created = new Date();
     const ws = wb.addWorksheet('Pump Head Loss Report', {views:[{showGridLines:false}]});
     ws.columns = [
